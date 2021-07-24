@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio JS</title>
+  <style>
+    body {
+      background: rgba(105, 105, 173);
+      color: #fff;
+      font: normal 30px Roboto;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var name = window.prompt('Seu nome')
+    // write escreve no documento
+    // length conta os caracteres
+    document.write(`Olá, <strong>${name}</strong>! Seu nome tem ${name.length} letras. <br/>`)
+    // toUpperCase() deixa tudo em maiusculas
+    document.write(`Seu nome em maiúsculas é ${name.toUpperCase()} <br/>`)
+    // toLowerCase() deixa tudo em minúsculas
+    document.write(`Seu nome em minúsculas é ${name.toLowerCase()}`)
+  </script>
+</body>
+</html>
