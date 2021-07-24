@@ -15,14 +15,24 @@
 </head>
 <body>
   <script>
-    var name = window.prompt('Seu nome')
+    var name = window.prompt('Seu nome?')
+    var income = Number(window.prompt('Qual seu valor de renda?'))
     // write escreve no documento
     // length conta os caracteres
     document.write(`Olá, <strong>${name}</strong>! Seu nome tem ${name.length} letras. <br/>`)
     // toUpperCase() deixa tudo em maiusculas
     document.write(`Seu nome em maiúsculas é ${name.toUpperCase()} <br/>`)
     // toLowerCase() deixa tudo em minúsculas
-    document.write(`Seu nome em minúsculas é ${name.toLowerCase()}`)
+    document.write(`Seu nome em minúsculas é ${name.toLowerCase()} <br/>`)
+
+    /*
+    .replace() transforma algo em outra coisa
+    income.replace('.', ',').toFixed(2)
+    .toFixed() deixa as casas decimais a mostra
+    */
+
+    // toLocaleString transformano valor monetário referente a localização
+    document.write(`Sua renda é de ${income.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
   </script>
 </body>
 </html>
