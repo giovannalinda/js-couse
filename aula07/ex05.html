@@ -72,6 +72,53 @@
     x++
     x--
 
+    // Operadores Relacionais
+    // > maior que
+    // < menor que
+    // >= maior ou igual a
+    // <= menor ou igual a
+    // == igual
+    // != diferente
+
+    // Exemplos 
+    var price = 230.50
+    var age = 17
+    var course = 'React'
+    var students = 34 
+    var enrolled = 1.265
+
+    document.write(price >= 200.50)
+    document.write(age < 18)
+    document.write(course == 'JavaScript')
+    document.write(students != enrolled)
+
+    // Relacionais chamados de Identidade
+    5 == 5 // true
+    5 == '5' // true (tipos diferentes, mas valores iguais)
+    5 === '5' // false (operador de igualdade restrita'são idênticos?')
+    5 === 5 // true
+    5 !== '5' // true (diferente restrito)
+
+    // Operadores lógicos
+    // ! negação
+    // && conjunção(dois valores)
+    // || disjunções(um ou outro)
+
+    // Exemplos
+    // ! unário(só tem um operando)
+    // && binário(dois valores de cada lado)
+    //|| binário(dois valores de cada lado)
+
+    var years = 16
+    var state = 'SC'
+    var wage = 1560
+    var gender = 'F'
+
+    years >= 15 && years <= 17 // a idade está entre 15 e 17?
+    state == 'RJ' || state == 'SP' // o estado é RJ ou SP?
+    wage > 1500 && gender != 'M' // o salário é acima de 1500 e não é M?
+
+    console.log(wage > 1500 && gender != 'M')
   </script>
 </body>
 </html>
