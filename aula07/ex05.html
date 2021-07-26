@@ -101,7 +101,7 @@
 
     // Operadores lógicos
     // ! negação
-    // && conjunção(dois valores)
+    // && conjunção - dois valores (e)
     // || disjunções(um ou outro)
 
     // Exemplos
@@ -119,6 +119,35 @@
     wage > 1500 && gender != 'M' // o salário é acima de 1500 e não é M?
 
     console.log(wage > 1500 && gender != 'M')
+
+    /* Precedência
+    () ** / aritméticos
+    > < >= relacionais
+    ! && || lógicos(ordem exata de precedência)
+
+    Operador Ternário
+    ?
+    :
+    */
+   // nota 
+    var assessment = 5.5
+
+    assessment += 2.1 
+
+    document.write(assessment >= 7.0 ? 'Aprovado' : 'Reprovado')
+    document.write(`Sua nota é de ${assessment}`)
+
+    // resultado
+    var x = 8
+
+    var res = x % 2 == 0 ? 5 : 9
+
+    document.write(`O resultado foi de: ${res}`)
+
+    var ages = 18
+    var result = ages >= 18 ? 'maior' : 'menor'
+
+    document.write(`Você é ${result} de idade`)
   </script>
 </body>
 </html>
