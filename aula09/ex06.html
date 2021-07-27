@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos com DOM</title>
+  <style>
+    body {
+      background: rgb(122, 84, 230);
+      color: #fff;
+      font: normal 30px Arial;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Iniciando estudos DOM</h1>
+  <p>Resultado</p>
+  <p  name="msg">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+  <div>Clique em mim</div>
+
+  <script>
+    /*
+    DOM (Document Object Model)
+    Modelo objetos dentro do navegador que dá acesso aos componentes internos do website.
+    
+    - window - janela do navegador
+    - location - localização do site
+    - document - documento atual
+    - history - da onde você veio e pra onde vai
+
+    - Selecionar elementos DOM
+    * por TagName
+      document.getElementsByTagName() // pode selecionar mais de um objeto
+    * por Id (#)
+      getElementById()
+    * por Nome 
+      getElementsByName() // usa-se [] para o objeto que quer manipular
+    * por Classe (.)
+      getElementsByClassName()
+    * por Seletor
+      querySelector() (um objeto)
+      querySelectorAll (mais de um objeto)
+    */
+
+    /* por Tagname
+    var body = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[0]
+
+    body.style.background = '#000'
+    p1.style.color = '#e22345'
+    window.document.write(' Está escrito: ' + p1.innerText)
+    */
+
+    /* Por Id
+    var d = window.document.getElementById('msg')
+    d.style.background = '#fff'
+    d.style.color = '#000'
+    d.innerText = 'Estou aguardando..'
+    */ 
+
+    /* Por Seletor
+    var d = window.document.querySelector('div.msg') // sintaxe do css . class # id
+    d.style.background = 'blue'
+    */ 
+
+    /* por ClassName
+    var d = window.document.getElementsByClassName('msg')[0]
+    d.innerText = 'teste'
+    */
+
+    // por Nome
+    var d = window.document.getElementsByName('msg')[0] 
+    d.innerText = 'teste'
+    
+  </script>
+</body>
+</html>
