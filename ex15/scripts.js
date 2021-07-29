@@ -1,20 +1,20 @@
 function download() {
-  var message = document.getElementById('message');
-  var image = document.getElementById('images')
-  var date = new Date()
-  var time = date.getHours()
+  const message = document.getElementById('message');
+  const image = document.getElementById('morning')
+  const date = new Date()
+  const time = date.getHours()
   message.innerHTML = `Agora são ${time} horas`
   if (time >= 0 && time < 12) {
     // bom dia
-    image.src = 'morning.png'
+    image.src = './images/morning.png'
     document.body.style.background = '#e3bd85'
   } else if (time >= 12 && time < 18) {
     // boa tarde
-    image.src = 'afternoon.png'
+    image.src = './images/afternoon.png'
     document.body.style.background = '#ffa234'
   } else {
     // boa noite
-    image.src = 'night.png'
+    image.src = './images/night.png'
     document.body.style.background = '#081c1d'
   }
 }
