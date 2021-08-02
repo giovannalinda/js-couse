@@ -15,6 +15,11 @@ function verify() {
     } else if (fsex[1].checked) {
       gender = 'uma mulher'
     }
+    result.style.textAlign = 'center'
     result.innerHTML = `Detectamos ${gender} com ${age} anos.`
+    /*
+    .setAttribute(adicionar imagem pelo src direto)
+    result.appendChild(img) cria um novo elemento em tela de imagem
+    */
   }
 }
