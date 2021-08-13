@@ -23,6 +23,7 @@ function geoFindMe() {
     status.textContent = 'Geolocalização não é suportada em seu navegador';
   } else {
     status.textContent = 'Localizando…';
+    // obtem posição atual
     navigator.geolocation.getCurrentPosition(success, error);
   }
 }
