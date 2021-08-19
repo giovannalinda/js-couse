@@ -3,14 +3,13 @@ let formlist = document.querySelector('select#formlist')
 let result = document.querySelector('div#result')
 let values = []
 
-function inList(t, l) {
-  if(l.indexOf(String(t)));
+function add() {
+  if(text.value) {
+    values.push(String(text.value))
+    let item = document.createElement('option')
+    item.textContent = `Valor ${value} adicionado`
+    formList.appendChild(item.value)
+  } 
 }
 
-function add() {
-  if(isText(String.value) && !inList(String.value, values)) {
-    values.push(String(String.value))
-  } else {
-    alert('Valor inválido ou já encontrado na lista!')
-  }
-}
+

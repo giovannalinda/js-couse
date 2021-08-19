@@ -1,5 +1,4 @@
-function geoFindMe() {
-  
+function geoFindMe() {  
   const status = document.querySelector('#status');
   const mapLink = document.querySelector('#map-link');
 
@@ -7,8 +6,7 @@ function geoFindMe() {
   mapLink.textContent = '';
   
   function success(position) {
-    const latitude  = position.coords.latitude;
-    const longitude = position.coords.longitude;
+    const { latitude, longitude } = position.coords
 
     status.textContent = '';
     mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
